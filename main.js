@@ -4,16 +4,12 @@ import { Person } from "./Info.mjs";
 
 async function Timer() {
     console.log("Vaqt ketdi");
-    await sleep(1500);
+    const getRandomNum = randomNum()
+    await sleep(getRandomNum);
     console.log("Vaqt tugadi");
+    console.log(`${getRandomNum} millisekund   blocklanib turdi`);
+
+    const student = new Person(`Ali`, 2011);
+    console.log(student.getInfo());
 }
 Timer()
-
-//Random son topish
-const getRandomNum = randomNum()
-
-console.log(getRandomNum);
-
-//FullInfo
-const student = new Person(`Ali`,2011);
-console.log(student.getInfo());
