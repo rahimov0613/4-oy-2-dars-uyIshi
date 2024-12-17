@@ -7,3 +7,9 @@ async function Timer() {
     console.log("Vaqt tugadi");
 }
 Timer()
+//Random son topish
+import { randomNum } from "./randomNum.mjs"
+
+const getRandomNum = randomNum()
+
+console.log(getRandomNum);
