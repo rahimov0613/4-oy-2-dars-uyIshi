@@ -13,3 +13,4 @@ async function Timer() {
     console.log(student.getInfo());
 }
 Timer()
+
